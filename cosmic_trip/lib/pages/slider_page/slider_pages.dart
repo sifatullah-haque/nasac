@@ -1,11 +1,16 @@
 import 'package:cosmic_trip/pages/common_elements/planet_images.dart';
 import 'package:cosmic_trip/pages/common_elements/planetary_texts.dart';
-import 'package:cosmic_trip/pages/common_elements/search_here.dart';
+import 'package:cosmic_trip/pages/common_elements/search_bar.dart';
+
 import 'package:flutter/material.dart';
 
 class SliderPages extends StatelessWidget {
+  final String planet, des, image;
   const SliderPages({
     super.key,
+    required this.planet,
+    required this.des,
+    required this.image,
   });
 
   @override
@@ -17,12 +22,11 @@ class SliderPages extends StatelessWidget {
           SearchHere(),
           const Spacer(),
           PlanetImages(
-            planet: "assets/mercury.png",
+            planet: image,
           ),
           PlanetaryTexts(
-            name: "Mercury",
-            details:
-                "Mercury: The Sun-Kissed World of Mysteries and Scientific Marvels ",
+            name: planet,
+            details: des,
           ),
           const Spacer(),
         ],
