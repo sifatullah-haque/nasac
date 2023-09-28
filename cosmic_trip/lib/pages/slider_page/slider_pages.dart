@@ -10,13 +10,15 @@ class SliderPages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: Column(
         children: [
           SearchHere(),
           const Spacer(),
-          PlanetImages(),
+          PlanetImages(
+            planet: "assets/mercury.png",
+          ),
           PlanetaryTexts(
             name: "Mercury",
             details:
