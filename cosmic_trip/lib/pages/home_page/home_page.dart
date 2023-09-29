@@ -1,4 +1,3 @@
-import 'package:cosmic_trip/pages/common_elements/search_bar.dart';
 import 'package:cosmic_trip/pages/slider_page/slider_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

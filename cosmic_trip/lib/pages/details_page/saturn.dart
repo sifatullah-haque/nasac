@@ -4,10 +4,10 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const DetailsPage());
+void main() => runApp(const SaturnDetails());
 
-class DetailsPage extends StatelessWidget {
-  const DetailsPage({super.key});
+class SaturnDetails extends StatelessWidget {
+  const SaturnDetails({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +41,11 @@ class DetailsPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       const DetailsPageButton(),
-                      SizedBox(height: 15.h),
+                      SizedBox(height: 10.h),
                       const PlanetDetailsTexts(),
-                      SizedBox(height: 15.h),
+                      SizedBox(height: 10.h),
                       const previewImage(),
-                      SizedBox(height: 15.h),
+                      SizedBox(height: 10.h),
                       SizedBox(
                         height: 50.h,
                         width: double.infinity,
@@ -124,7 +124,7 @@ class PlanetDetailsTexts extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "Mars, the fourth planet from the Sun, remains a tantalizing realm of discovery and future human potential.",
+          "Saturn, the sixth planet from the Sun, mesmerizes with its iconic ring system and continues to captivate astronomers and space enthusiasts with its unique beauty and scientific significance.",
           style: GoogleFonts.poppins(
             fontSize: 17.sp,
           ),
@@ -144,7 +144,7 @@ class PlanetDetailsTexts extends StatelessWidget {
             SizedBox(
               width: 20.w,
             ),
-            Text("6,779 Km"),
+            Text("116,464 KM"),
           ],
         ),
         Row(
@@ -159,7 +159,7 @@ class PlanetDetailsTexts extends StatelessWidget {
             SizedBox(
               width: 20.w,
             ),
-            Text("687 Earth days"),
+            Text("29.5 Earth years."),
           ],
         ),
         Row(
@@ -174,7 +174,7 @@ class PlanetDetailsTexts extends StatelessWidget {
             SizedBox(
               width: 20.w,
             ),
-            Text("Olympus Mons"),
+            Text("North Pole Hexagon"),
           ],
         ),
       ],

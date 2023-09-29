@@ -4,10 +4,10 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const DetailsPage());
+void main() => runApp(const VenusDetails());
 
-class DetailsPage extends StatelessWidget {
-  const DetailsPage({super.key});
+class VenusDetails extends StatelessWidget {
+  const VenusDetails({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -124,7 +124,7 @@ class PlanetDetailsTexts extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "Mars, the fourth planet from the Sun, remains a tantalizing realm of discovery and future human potential.",
+          "Venus, the second planet from the Sun, shrouded in mysteries, awaits exploration and further understanding of its extreme conditions.",
           style: GoogleFonts.poppins(
             fontSize: 17.sp,
           ),
@@ -144,7 +144,7 @@ class PlanetDetailsTexts extends StatelessWidget {
             SizedBox(
               width: 20.w,
             ),
-            Text("6,779 Km"),
+            Text("12,104 KM"),
           ],
         ),
         Row(
@@ -159,7 +159,7 @@ class PlanetDetailsTexts extends StatelessWidget {
             SizedBox(
               width: 20.w,
             ),
-            Text("687 Earth days"),
+            Text("243 Earth days"),
           ],
         ),
         Row(
@@ -174,7 +174,7 @@ class PlanetDetailsTexts extends StatelessWidget {
             SizedBox(
               width: 20.w,
             ),
-            Text("Olympus Mons"),
+            Text("Volcanic Activity"),
           ],
         ),
       ],
