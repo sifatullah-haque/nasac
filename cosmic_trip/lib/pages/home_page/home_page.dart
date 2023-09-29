@@ -51,48 +51,45 @@ class HomePage extends StatelessWidget {
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/background.png"),
-              fit: BoxFit.contain,
+              fit: BoxFit.cover,
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
-            child: Scaffold(
+          child: Scaffold(
+            backgroundColor: Colors.transparent,
+            appBar: AppBar(
               backgroundColor: Colors.transparent,
-              appBar: AppBar(
-                backgroundColor: Colors.transparent,
-                elevation: 0,
-                leading: const Icon(
-                  Icons.menu_rounded,
-                  color: Colors.white,
-                  size: 40.0,
-                ),
-                centerTitle: true,
-                title: Row(
-                  children: [
-                    Text(
-                      "Cosmic",
-                      style: GoogleFonts.roboto(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30.0,
-                      ),
-                    ),
-                    Text(
-                      "Trip",
-                      style: GoogleFonts.roboto(
-                        fontWeight: FontWeight.w200,
-                        fontSize: 30.0,
-                      ),
-                    ),
-                  ],
-                ),
+              elevation: 0,
+              leading: const Icon(
+                Icons.menu_rounded,
+                color: Colors.white,
+                size: 40.0,
               ),
-              body: PageView.builder(
-                itemCount: DemoData.length,
-                itemBuilder: (context, index) => SliderPages(
-                  planet: DemoData[index].title,
-                  des: DemoData[index].details,
-                  image: DemoData[index].image,
-                ),
+              centerTitle: true,
+              title: Row(
+                children: [
+                  Text(
+                    "Cosmic",
+                    style: GoogleFonts.roboto(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30.0,
+                    ),
+                  ),
+                  Text(
+                    "Trip",
+                    style: GoogleFonts.roboto(
+                      fontWeight: FontWeight.w200,
+                      fontSize: 30.0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            body: PageView.builder(
+              itemCount: DemoData.length,
+              itemBuilder: (context, index) => SliderPages(
+                planet: DemoData[index].title,
+                des: DemoData[index].details,
+                image: DemoData[index].image,
               ),
             ),
           ),
