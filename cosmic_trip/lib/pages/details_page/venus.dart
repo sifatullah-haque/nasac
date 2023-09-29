@@ -99,7 +99,7 @@ class previewImage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              Image.asset("assets/mars/marsSecond.png"),
+              Image.asset("assets/venus/venus2.png"),
               SizedBox(width: 10.h),
               Image.asset("assets/mars/marsThird.png"),
               SizedBox(width: 10.h),
