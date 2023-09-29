@@ -24,7 +24,7 @@ class SaturnDetails extends StatelessWidget {
                   child: Container(
                     decoration: const BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/mars/marsHero.png"),
+                          image: AssetImage("assets/saturn/saturn1.png"),
                           fit: BoxFit.cover),
                     ),
                   )),
@@ -99,13 +99,13 @@ class previewImage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              Image.asset("assets/mars/marsSecond.png"),
+              Image.asset("assets/saturn/saturn2.png"),
               SizedBox(width: 10.h),
-              Image.asset("assets/mars/marsThird.png"),
+              Image.asset("assets/saturn/saturn3.png"),
               SizedBox(width: 10.h),
-              Image.asset("assets/mars/marsFour.png"),
+              Image.asset("assets/saturn/saturn4.png"),
               SizedBox(width: 10.h),
-              Image.asset("assets/mars/marsSecond.png"),
+              Image.asset("assets/saturn/saturn5.png"),
             ],
           ),
         )

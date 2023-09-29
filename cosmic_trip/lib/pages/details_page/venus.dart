@@ -24,7 +24,7 @@ class VenusDetails extends StatelessWidget {
                   child: Container(
                     decoration: const BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/mars/marsHero.png"),
+                          image: AssetImage("assets/venus/venus1.png"),
                           fit: BoxFit.cover),
                     ),
                   )),
@@ -101,11 +101,11 @@ class previewImage extends StatelessWidget {
             children: [
               Image.asset("assets/venus/venus2.png"),
               SizedBox(width: 10.h),
-              Image.asset("assets/mars/marsThird.png"),
+              Image.asset("assets/venus/venus3.png"),
               SizedBox(width: 10.h),
-              Image.asset("assets/mars/marsFour.png"),
+              Image.asset("assets/venus/venus4.png"),
               SizedBox(width: 10.h),
-              Image.asset("assets/mars/marsSecond.png"),
+              Image.asset("assets/venus/venus5.png"),
             ],
           ),
         )
