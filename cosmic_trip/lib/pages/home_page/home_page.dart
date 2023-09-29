@@ -1,3 +1,6 @@
+import 'package:cosmic_trip/pages/details_page/mars_details.dart';
+import 'package:cosmic_trip/pages/details_page/saturn_details.dart';
+import 'package:cosmic_trip/pages/details_page/venus_details.dart';
 import 'package:cosmic_trip/pages/slider_page/slider_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,30 +19,40 @@ class HomePage extends StatelessWidget {
             "Mercury: The Sun-Kissed World of Mysteries and Scientific Marvels ",
         image: "assets/mercury.png",
         title: "Mercury",
+        nav: VenusDetails(),
       ),
       PlanetDetails(
-          details: "Venus: The Mysterious Morning Star and Scientific Enigma ",
-          image: "assets/venus.png",
-          title: "Venus"),
+        details: "Venus: The Mysterious Morning Star and Scientific Enigma ",
+        image: "assets/venus.png",
+        title: "Venus",
+        nav: VenusDetails(),
+      ),
       PlanetDetails(
-          details: "Exploring Mars: The Red Planet's Mysteries",
-          image: "assets/mars.png",
-          title: "Mars"),
+        details: "Exploring Mars: The Red Planet's Mysteries",
+        image: "assets/mars.png",
+        title: "Mars",
+        nav: MarsDetails(),
+      ),
       PlanetDetails(
           details:
               "Jupiter: The Giant of the Solar System, a Cosmic Marvel, and a Realm of Endless Fascination",
           image: "assets/jupiter.png",
-          title: "Jupiter"),
+          title: "Jupiter",
+          nav: VenusDetails()),
       PlanetDetails(
-          details:
-              "Saturn: The Ringed Wonder, Scientific Treasure, and Celestial Marvel of Our Solar System",
-          image: "assets/saturn.png",
-          title: "Saturn"),
+        details:
+            "Saturn: The Ringed Wonder, Scientific Treasure, and Celestial Marvel of Our Solar System",
+        image: "assets/saturn.png",
+        title: "Saturn",
+        nav: SaturnDetails(),
+      ),
       PlanetDetails(
-          details:
-              "Uranus: The Enigmatic Ice Giant, Astronomical Puzzle, and Cosmic Mystery",
-          image: "assets/uranus.png",
-          title: "Uranus"),
+        details:
+            "Uranus: The Enigmatic Ice Giant, Astronomical Puzzle, and Cosmic Mystery",
+        image: "assets/uranus.png",
+        title: "Uranus",
+        nav: SaturnDetails(),
+      ),
     ];
 
     return ScreenUtilInit(
@@ -91,6 +104,7 @@ class HomePage extends StatelessWidget {
                 planet: DemoData[index].title,
                 des: DemoData[index].details,
                 image: DemoData[index].image,
+                link: DemoData[index].nav,
               ),
             ),
           ),
@@ -101,10 +115,11 @@ class HomePage extends StatelessWidget {
 }
 
 class PlanetDetails {
-  final title, details, image;
+  final title, details, image, nav;
   PlanetDetails({
     required this.details,
     required this.image,
     required this.title,
+    required this.nav,
   });
 }

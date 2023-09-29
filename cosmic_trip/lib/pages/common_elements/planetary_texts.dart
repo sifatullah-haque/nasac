@@ -1,14 +1,16 @@
-import 'package:cosmic_trip/pages/details_page/venus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// ignore: must_be_immutable
 class PlanetaryTexts extends StatelessWidget {
   final String name, details;
-  const PlanetaryTexts({
+  var link;
+  PlanetaryTexts({
     super.key,
     required this.details,
     required this.name,
+    required this.link,
   });
 
   @override
@@ -48,7 +50,7 @@ class PlanetaryTexts extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => VenusDetails(),
+                      builder: (context) => link,
                     ),
                   );
                 },

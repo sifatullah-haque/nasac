@@ -4,10 +4,10 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const DetailsPage());
+void main() => runApp(const MarsDetails());
 
-class DetailsPage extends StatelessWidget {
-  const DetailsPage({super.key});
+class MarsDetails extends StatelessWidget {
+  const MarsDetails({super.key});
 
   @override
   Widget build(BuildContext context) {
