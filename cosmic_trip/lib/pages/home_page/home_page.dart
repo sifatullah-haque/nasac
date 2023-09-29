@@ -12,10 +12,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final DemoData = [
       PlanetDetails(
-          details:
-              "Mercury: The Sun-Kissed World of Mysteries and Scientific Marvels ",
-          image: "assets/mercury.png",
-          title: "Mercury"),
+        details:
+            "Mercury: The Sun-Kissed World of Mysteries and Scientific Marvels ",
+        image: "assets/mercury.png",
+        title: "Mercury",
+      ),
       PlanetDetails(
           details: "Venus: The Mysterious Morning Star and Scientific Enigma ",
           image: "assets/venus.png",

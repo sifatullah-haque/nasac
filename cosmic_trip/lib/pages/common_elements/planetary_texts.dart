@@ -1,3 +1,4 @@
+import 'package:cosmic_trip/pages/details_page/venus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,9 +42,16 @@ class PlanetaryTexts extends StatelessWidget {
           ),
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => VenusDetails(),
+                    ),
+                  );
+                },
                 child: Row(
                   children: [
                     Text(
