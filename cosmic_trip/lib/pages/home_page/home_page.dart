@@ -1,5 +1,8 @@
+import 'package:cosmic_trip/pages/details_page/jupiter_details.dart';
 import 'package:cosmic_trip/pages/details_page/mars_details.dart';
+import 'package:cosmic_trip/pages/details_page/mercury_details.dart';
 import 'package:cosmic_trip/pages/details_page/saturn_details.dart';
+import 'package:cosmic_trip/pages/details_page/uranus_details.dart';
 import 'package:cosmic_trip/pages/details_page/venus_details.dart';
 import 'package:cosmic_trip/pages/slider_page/slider_pages.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +22,7 @@ class HomePage extends StatelessWidget {
             "Mercury: The Sun-Kissed World of Mysteries and Scientific Marvels ",
         image: "assets/mercury.png",
         title: "Mercury",
-        nav: VenusDetails(),
+        nav: MercuryDetails(),
       ),
       PlanetDetails(
         details: "Venus: The Mysterious Morning Star and Scientific Enigma ",
@@ -38,7 +41,7 @@ class HomePage extends StatelessWidget {
               "Jupiter: The Giant of the Solar System, a Cosmic Marvel, and a Realm of Endless Fascination",
           image: "assets/jupiter.png",
           title: "Jupiter",
-          nav: VenusDetails()),
+          nav: JupiterDetails()),
       PlanetDetails(
         details:
             "Saturn: The Ringed Wonder, Scientific Treasure, and Celestial Marvel of Our Solar System",
@@ -51,7 +54,7 @@ class HomePage extends StatelessWidget {
             "Uranus: The Enigmatic Ice Giant, Astronomical Puzzle, and Cosmic Mystery",
         image: "assets/uranus.png",
         title: "Uranus",
-        nav: SaturnDetails(),
+        nav: UranusDetails(),
       ),
     ];
 

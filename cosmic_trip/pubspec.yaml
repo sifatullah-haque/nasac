@@ -66,6 +66,9 @@ flutter:
     - assets/mars/
     - assets/venus/
     - assets/saturn/
+    - assets/mercury/
+    - assets/jupiter/
+    - assets/uranus/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
