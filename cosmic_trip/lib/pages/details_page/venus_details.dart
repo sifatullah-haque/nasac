@@ -1,3 +1,11 @@
+/// This file contains the VenusDetails widget which displays the details of Venus planet.
+/// It imports the necessary packages and widgets to build the UI.
+/// The widget is a stateless widget that returns a MaterialApp widget.
+/// The MaterialApp widget contains a SafeArea widget that has a Scaffold widget as its child.
+/// The Scaffold widget has a Column widget as its body that contains the UI elements.
+/// The UI elements include an image, a button, and some text.
+/// The widget also contains three other stateless widgets: previewImage, PlanetDetailsTexts, and DetailsPageButton.
+/// These widgets are used to display the preview images, planet details, and a button respectively.
 import 'package:cosmic_trip/pages/constant/theme_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';

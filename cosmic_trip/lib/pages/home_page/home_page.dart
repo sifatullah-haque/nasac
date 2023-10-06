@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const HomePage());
-
+/// This is the main class for the home page of the Cosmic Trip app.
+/// It displays a slider with information about different planets in our solar system.
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -117,6 +117,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
+/// This class represents the details of a planet.
 class PlanetDetails {
   final title, details, image, nav;
   PlanetDetails({
